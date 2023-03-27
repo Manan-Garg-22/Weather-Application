@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hellix', sans-serif;
+    background-color: black;
+}
+
+/*background animation start*/
+.area{
+    background: black;  
+    background: -webkit-linear-gradient(to left, #2b1c2d, #0c0c0f);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.171);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+/*background animation ends*/
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    margin-bottom: 80px;
+    
+}
+
+/*Water wave animation*/
+/*Source: https://alvarotrigo.com/blog/css-text-animations/ */
+.Witty {
+    position: relative;
+  }
+  
+  .Witty h1 {
+    color: #fff;
+    font-size: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Witty h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+  }
+  
+  .Witty h1:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+/*Water wave animation ends*/
+
+.Witty{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.Witty h1{
+    font-family: 'Bubblegum Sans';font-size: 72px;
+    margin-left: 4px;
+    transform: scale(.8, 1);
+}
+
+
+.SearchBar{
+    margin-right: 82px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 40px;
+    border-radius: 8px;
+    width: 200px;
+    border: none;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 20px;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#icon{
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(231, 134, 134);
+    cursor: pointer;
+}
+
+#icon:hover{
+    background-color: crimson;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 410px;
+}
+
+.Weather{
+    width: 460px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 136, 0.7), rgb(238, 64, 162), rgb(153, 85, 238), rgb(239, 246, 182));
+    color: black;
+    text-align: center;
+}
+
+.GPT{
+    width: 740px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    color:aliceblue;
+    font-family: 'Electrolize', sans-serif ;
+}
+
+.T, .H, .W{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.T img, .H img, .W img{
+    width: 30px;
+    height: auto;
+}
+
+.temp{
+    margin-top: 50px;
+}
+
+.humid, .win{
+    margin-top: 30px;
+}
+
+.loc{
+    height: 50px;
+    width: 460px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(255, 185, 185, 0.467);
+    margin-top: 34px;
+    text-align: left;
+    font-family: cursive;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+/*Footer start*/
+/*Source: https://fossheim.io/writing/posts/css-text-gradient/ */
+.footer{
+    padding: 60px;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    background-color: #CA4246;
+     background-image: linear-gradient(
+          45deg, 
+          #CA4246 36.666%, 
+        #E16541 16.666%,   
+        #F18F43 40%, 
+        #8B9862 50%, 
+        #476098 46.666%, 
+        #476098 53.333%, 
+        #b62ca4 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.footer:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+/*Footer end*/
+
+@media screen AND (max-width: 768px) {
+    .main{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .Weather{
+        width: 80%;
+    }
+    .GPT{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .Header{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 110px;
+        text-align: center;
+    }
+    #icon, .Searchbar{
+        margin:0px;
+        margin-top: 15px;
+    }
+    .footer{
+        padding-top: 25px;
+    }
+}

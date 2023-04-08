@@ -30,12 +30,12 @@ function search(e){
         headers: {
           accept: 'application/json',
           'content-type': 'application/json',
-          'X-API-KEY': '663d1402-30f0-4a43-90c2-877f2b61dc55'
+          'X-API-KEY': '0856a54d-b98b-4d1e-aca8-a2e4fc8f7598'
         },
         body: JSON.stringify({
           enable_google_results: 'true',
           enable_memory: false,
-          input_text: `Funny statement about weather in ${sval.value} in about 30 words`
+          input_text: `Funny statement about weather in ${sval.value} in about 20 words`
         })
       };
       

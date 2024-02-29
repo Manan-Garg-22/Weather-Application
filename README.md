@@ -1,4 +1,4 @@
-# Weather.io
+# manan-garg-22.github.io/Weather.html
 Weather Application 
 
 Topics covered while building this project:
